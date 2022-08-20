@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueCollar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Mulish&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-hours">
+                        <p>Opening Hours: 06:00 to 20:00</p>
+                    </div>
+                    <div class="header__top-social social">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18.5147 9.50731C18.5147 4.7675 14.5237 0.924316 9.60158 0.924316C4.67948 0.924316 0.688477 4.7675 0.688477 9.50731C0.688477 13.7911 3.94733 17.342 8.20891 17.9865V11.9891H5.94522V9.50731H8.20891V7.61637C8.20891 5.46564 9.53991 4.27666 11.5756 4.27666C12.5509 4.27666 13.5711 4.44449 13.5711 4.44449V6.5569H12.4466C11.34 6.5569 10.9939 7.21825 10.9939 7.898V9.50731H13.4657L13.0709 11.9891H10.9943V17.9872C15.2558 17.3431 18.5147 13.7923 18.5147 9.50731Z"
+                                            fill="#1C2752" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.4765 2.65911C18.76 2.97042 18.002 3.17551 17.2263 3.26791C18.0415 2.79057 18.6545 2.03224 18.9504 1.13513C18.1797 1.5858 17.3379 1.90201 16.4611 2.07021C16.0919 1.68326 15.6479 1.37543 15.156 1.16543C14.6641 0.955431 14.1346 0.847651 13.5998 0.84864C11.4344 0.84864 9.682 2.57555 9.682 4.70435C9.68046 5.00046 9.71439 5.29569 9.78306 5.58373C8.23031 5.51093 6.70984 5.11483 5.31894 4.42075C3.92805 3.72667 2.69734 2.7499 1.70556 1.55293C1.35762 2.1395 1.17361 2.80874 1.17277 3.49074C1.17277 4.8277 1.8703 6.00949 2.92355 6.70184C2.29953 6.68703 1.68829 6.52187 1.14173 6.22038V6.26813C1.14173 8.13829 2.49461 9.6941 4.28519 10.0482C3.94848 10.138 3.6015 10.1835 3.25302 10.1835C3.00575 10.184 2.75905 10.16 2.5165 10.1119C3.01428 11.6438 4.46306 12.758 6.17923 12.7898C4.78471 13.8645 3.07262 14.4454 1.31203 14.4411C0.999525 14.4407 0.687306 14.4221 0.376953 14.3854C2.168 15.5291 4.24995 16.134 6.375 16.1282C13.5914 16.1282 17.5339 10.2512 17.5339 5.15399C17.5339 4.98687 17.5295 4.81975 17.5215 4.6566C18.2868 4.11229 18.9488 3.43587 19.4765 2.65911Z"
+                                            fill="#1C2752" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.39535 0C4.394 0 0.338745 4.05345 0.338745 9.05256C0.338745 12.7585 2.57055 15.943 5.76058 17.3454C5.73632 16.7149 5.75654 15.9551 5.91826 15.2681C6.09212 14.5326 7.08268 10.3337 7.08268 10.3337C7.08268 10.3337 6.79158 9.75575 6.79158 8.90304C6.79158 7.56132 7.56786 6.55907 8.53821 6.55907C9.36301 6.55907 9.75923 7.17739 9.75923 7.91695C9.75923 8.74542 9.22958 9.98207 8.95869 11.1298C8.73228 12.0916 9.43983 12.8716 10.39 12.8716C12.1042 12.8716 13.2606 10.6691 13.2606 8.0584C13.2606 6.07411 11.9223 4.59094 9.49239 4.59094C6.7471 4.59094 5.03282 6.63989 5.03282 8.92728C5.03282 9.71534 5.26732 10.273 5.6312 10.7014C5.79697 10.8994 5.82123 10.9803 5.76058 11.2066C5.7161 11.3723 5.61907 11.7724 5.5746 11.934C5.51395 12.1644 5.32796 12.2452 5.12177 12.1603C3.85627 11.6431 3.26597 10.2609 3.26597 8.70097C3.26597 6.13069 5.43713 3.04716 9.73902 3.04716C13.1959 3.04716 15.4722 5.54874 15.4722 8.23217C15.4722 11.7845 13.4951 14.4356 10.584 14.4356C9.60559 14.4356 8.6878 13.9062 8.37244 13.3081C8.37244 13.3081 7.84683 15.3934 7.73363 15.7975C7.5436 16.4967 7.16759 17.1918 6.82392 17.7374C7.65757 17.9832 8.52214 18.1084 9.39131 18.1092C14.3927 18.1092 18.4479 14.0557 18.4479 9.05661C18.4479 4.05749 14.3967 0 9.39535 0Z"
+                                            fill="#1C2752" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link" href="#">
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6268 2.35469C13.6109 2.35752 14.5539 2.73524 15.2498 3.40535C15.9456 4.07546 16.3379 4.98351 16.3408 5.93119V13.0834C16.3379 14.0311 15.9456 14.9392 15.2498 15.6093C14.5539 16.2794 13.6109 16.6571 12.6268 16.6599H5.19944C4.21532 16.6571 3.27234 16.2794 2.57645 15.6093C1.88057 14.9392 1.48832 14.0311 1.48539 13.0834V5.93119C1.48832 4.98351 1.88057 4.07546 2.57645 3.40535C3.27234 2.73524 4.21532 2.35752 5.19944 2.35469H12.6268ZM12.6268 0.924316H5.19944C2.33969 0.924316 0 3.17735 0 5.93119V13.0834C0 15.8373 2.33969 18.0903 5.19944 18.0903H12.6268C15.4865 18.0903 17.8262 15.8373 17.8262 13.0834V5.93119C17.8262 3.17735 15.4865 0.924316 12.6268 0.924316Z"
+                                            fill="#1C2752" />
+                                        <path
+                                            d="M13.7409 5.93139C13.5205 5.93139 13.3051 5.86847 13.1219 5.75058C12.9387 5.63269 12.7959 5.46513 12.7116 5.26909C12.6272 5.07305 12.6052 4.85733 12.6482 4.64921C12.6912 4.44109 12.7973 4.24993 12.9531 4.09988C13.1089 3.94984 13.3074 3.84766 13.5235 3.80626C13.7397 3.76486 13.9637 3.78611 14.1673 3.86731C14.3708 3.94852 14.5448 4.08603 14.6673 4.26246C14.7897 4.4389 14.855 4.64632 14.855 4.85852C14.8553 4.9995 14.8267 5.13914 14.7709 5.26945C14.715 5.39975 14.6329 5.51815 14.5294 5.61783C14.4259 5.71752 14.3029 5.79653 14.1676 5.85034C14.0323 5.90415 13.8873 5.9317 13.7409 5.93139ZM8.9131 6.64639C9.50074 6.64639 10.0752 6.81419 10.5638 7.12857C11.0524 7.44296 11.4332 7.8898 11.6581 8.41261C11.883 8.93541 11.9418 9.51069 11.8272 10.0657C11.7125 10.6207 11.4296 11.1305 11.014 11.5306C10.5985 11.9308 10.0691 12.2033 9.49274 12.3137C8.91639 12.4241 8.31899 12.3674 7.77608 12.1508C7.23317 11.9343 6.76914 11.5676 6.44266 11.0971C6.11619 10.6266 5.94193 10.0734 5.94193 9.50751C5.94277 8.74894 6.25608 8.02168 6.81309 7.48529C7.37011 6.9489 8.12535 6.6472 8.9131 6.64639ZM8.9131 5.21602C8.03167 5.21602 7.17005 5.46771 6.43717 5.93926C5.70429 6.41082 5.13309 7.08106 4.79578 7.86523C4.45847 8.6494 4.37022 9.51227 4.54218 10.3447C4.71413 11.1772 5.13858 11.9419 5.76184 12.5421C6.3851 13.1422 7.17918 13.551 8.04367 13.7165C8.90815 13.8821 9.80422 13.7972 10.6185 13.4723C11.4329 13.1475 12.1289 12.5975 12.6186 11.8917C13.1083 11.186 13.3696 10.3563 13.3696 9.50751C13.3696 8.36934 12.9001 7.27778 12.0644 6.47297C11.2286 5.66815 10.095 5.21602 8.9131 5.21602Z"
+                                            fill="#1C2752" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar -->
+            <nav>
+                <div class="container">
+                    <div class="navbar">
+                        <div class="header-mid">
+                            <div class="logo"> <a href="#"> <img src="images/logo.svg" alt="logo"> </a> </div>
+                            <div class="btns">
+                                <a class="email-btn" href="mailto:Info@bluecollar.com">
+                                    <p class="email-btn__text">Mail Us</p>
+                                    <p class="email-btn__email">Info@bluecollar.com</p>
+                                </a>
+                                <a class="tel-btn" href="tel:+01569896654">
+                                    <p class="tel-btn__text">Call Us</p>
+                                    <p class="tel-btn__tel">+01 569 896 654</p>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Home</a></li>
+                            <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>About Us</a></li>
+                            <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Pages</a></li>
+                            <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Blog</a></li>
+                            <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Contact Us</a></li>
+                            <li class="menu__item"><a href="#" class="menu__item-link question-btn" data-scroll>Have Any
+                                    Questions?</a></li>
+                        </ul>
+                        <div class="burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__inner-decor decor-info">
+                            <img src="images/hero/decor-img.svg" alt="decor">
+                            <span>Improve our customers’ lives by providing effective solutions.</span>
+                        </div>
+                        <h1 class="hero__inner-title">A recognized leader in services industry</h1>
+                        <a class="hero__inner-btn" href="#">View Services</a>
+                    </div>
+                </div>
+            </section>
+            <section class="welcome">
+                <div class="container">
+                    <div class="welcome-inner">
+                        <div class="welcome-inner__img">
+                            <img src="images/welcome/welcome-img.jpg" alt="image">
+                        </div>
+                        <div class="welcome-inner__info">
+                            <div class="welcome-inner__info-decor decor-info">
+                                <img src="images/welcome/decor-img.svg" alt="decor">
+                                <span>Welcome BlueCollar</span>
+                            </div>
+                            <h2 class="welcome-inner__info-title">We Provide Your Future</h2>
+                            <div class="welcome-inner__info-text">
+                                <p>Bluecollar Electrical services was established in 2008. We are trusted and reliable
+                                    electricians who serve customers in the city as well as throughout United States Of
+                                    America.</p>
+                                <p>We have extensive experience of domestic and business electrical installations and no
+                                    job is too small. Our customers value our professionalism, work ethic and our
+                                    competitive prices.</p>
+                            </div>
+                            <div class="welcome-inner__info-experience">
+                                <div class="welcome-inner__info-years">
+                                    <div class="welcome-inner__info-amount">35</div>
+                                    <div class="welcome-inner__info-content">Years Of Experience</div>
+                                </div>
+                                <ul class="welcome-inner__info-list">
+                                    <li class="welcome-inner__info-item">- For all your system requirements</li>
+                                    <li class="welcome-inner__info-item">- All work undertaken by qualified</li>
+                                    <li class="welcome-inner__info-item">- Experienced office staff on hand</li>
+                                    <li class="welcome-inner__info-item">- A Full Guarantee On Workmanship</li>
+                                    <li class="welcome-inner__info-item">- Properties at a reasonable price.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offer">
+                <div class="container">
+                    <div class="offer__inner">
+                        <div class="offer__inner-decor decor-info">
+                            <img src="images/offer/decor-img.svg" alt="decor">
+                            <span>What We Offer</span>
+                        </div>
+                        <h2 class="offer__inner-title">Professional Main Services</h2>
+                        <div class="offer__inner-text">
+                            <p>We have extensive experience of domestic and business electrical installations and no job
+                                is too small. Our customers value our professionalism, work ethic and our competitive
+                                prices.</p>
+                        </div>
+                        <!-- Tabs -->
+                        <div class="tabs">
+                            <div class="tabs__header">
+                                <div class="tabs__header-item active">
+                                    <div class="tabs__header-itemimg">
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M0 0H36V36H0V0Z" fill="url(#pattern0)" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                    height="1">
+                                                    <use xlink:href="#image0_1_421" transform="scale(0.0138889)" />
+                                                </pattern>
+                                                <image id="image0_1_421" width="72" height="72"
+                                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNjM5MTgzNkI5NkExMUVDQjEwQjhBMTRDMDMzRDc2RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowNjM5MTgzN0I5NkExMUVDQjEwQjhBMTRDMDMzRDc2RCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjA2MzkxODM0Qjk2QTExRUNCMTBCOEExNEMwMzNENzZEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA2MzkxODM1Qjk2QTExRUNCMTBCOEExNEMwMzNENzZEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+rwYecgAACQZJREFUeNrsnAlsFGUU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" />
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <h6 class="tabs__header-item-title">Commercial</h6>
+
+                                </div>
+                                <div class="tabs__header-item">
+                                    <div class="tabs__header-itemimg">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M0 0H34V34H0V0Z" fill="url(#pattern0)" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                    height="1">
+                                                    <use xlink:href="#image0_1_426" transform="scale(0.0147059)" />
+                                                </pattern>
+                                                <image id="image0_1_426" width="68" height="68"
+                                                    xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg>
+                                    </div>
+
+                                    <h6 class="tabs__header-item-title">Residential</h6>
+                                </div>
+                                <div class="tabs__header-item">
+                                    <div class="tabs__header-itemimg">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M0 0H34V34H0V0Z" fill="url(#pattern0)" />
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+                                                    height="1">
+                                                    <use xlink:href="#image0_1_430" transform="scale(0.015625)" />
+                                                </pattern>
+                                                <image id="image0_1_430" width="64" height="64"
+                                                    xlink:href="data:image/png;base64,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" />
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                    <h6 class="tabs__header-item-title">Industrial</h6>
+                                </div>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="tabs__content-item">
+                                    <div class="tabs__content-content">
+                                        <div class="tabs__content-decor decor-info">
+                                            <img src="images/offer/decor-img2.png" alt="decor">
+                                            <span>Electrical installation</span>
+                                        </div>
+                                        <h4 class="tabs__content-title">Commercial</h4>
+                                        <div class="tabs__content-text">
+                                            <p>Electrical & Maintenance Services Ltd offers a full range of electrical
+                                                services to suit your needs – from moving a light switch to complete
+                                                house rewires.</p>
+                                            <p>In addition to providing fully qualified, competent electricians in and
+                                                around London, the company also runs an electrical wholesale shop.</p>
+                                        </div>
+                                        <a class="tabs__content-btn" href="#">Read More</a>
+                                    </div>
+                                    <div class="tabs__content-img">
+                                        <img src="images/offer/offer-img.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="tabs__content-item">
+                                    <div class="tabs__content-content">
+                                        <div class="tabs__content-decor decor-info">
+                                            <img src="images/offer/decor-img2.png" alt="decor">
+                                            <span>Electrical installation</span>
+                                        </div>
+                                        <h4 class="tabs__content-title">Residential</h4>
+                                        <div class="tabs__content-text">
+                                            <p>Electrical & Maintenance Services Ltd offers a full range of electrical
+                                                services to suit your needs – from moving a light switch to complete
+                                                house rewires.</p>
+                                            <p>In addition to providing fully qualified, competent electricians in and
+                                                around London, the company also runs an electrical wholesale shop.</p>
+                                        </div>
+                                        <a class="tabs__content-btn" href="#">Read More</a>
+                                    </div>
+                                    <div class="tabs__content-img">
+                                        <img src="images/offer/offer-img.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="tabs__content-item">
+                                    <div class="tabs__content-content">
+                                        <div class="tabs__content-decor decor-info">
+                                            <img src="images/offer/decor-img2.png" alt="decor">
+                                            <span>Electrical installation</span>
+                                        </div>
+                                        <h4 class="tabs__content-title">Industrial</h4>
+                                        <div class="tabs__content-text">
+                                            <p>Electrical & Maintenance Services Ltd offers a full range of electrical
+                                                services to suit your needs – from moving a light switch to complete
+                                                house rewires.</p>
+                                            <p>In addition to providing fully qualified, competent electricians in and
+                                                around London, the company also runs an electrical wholesale shop.</p>
+                                        </div>
+                                        <a class="tabs__content-btn" href="#">Read More</a>
+                                    </div>
+                                    <div class="tabs__content-img">
+                                        <img src="images/offer/offer-img.jpg" alt="image">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <div class="services__inner">
+                        <div class="services__inner-decor">
+                            <img src="images/services/decor-img.svg" alt="decor">
+                            <span>Area Of Service</span>
+                        </div>
+                        <h2 class="services__inner-title">Our Services</h2>
+                        <h6 class="services__inner-subtitle">We offers a comprehensive range of electrical services for
+                            domestic and commercial properties at a reasonable price.</h6>
+                        <div class="services__boxes">
+                            <div class="services__box">
+                                <img class="services__box-img" src="images/services/box1.png" alt="box-img">
+                                <h5 class="services__box-title">Air condition service</h5>
+                                <div class="services__box-text">
+                                    <p>Electrical Services are able to service your entire electrical infrastructure
+                                        from Thermal Imaging of your switch boards.</p>
+                                </div>
+                                <a class="services__box-btn" href="#">View More</a>
+                            </div>
+                            <div class="services__box">
+                                <img class="services__box-img" src="images/services/box2.png" alt="box-img">
+                                <h5 class="services__box-title">Electrical installation</h5>
+                                <div class="services__box-text">
+                                    <p>Services are able to service your entire electrical infrastructure from Thermal
+                                        Imaging of your air condition from switch boards.</p>
+                                </div>
+                                <a class="services__box-btn" href="#">View More</a>
+                            </div>
+                            <div class="services__box">
+                                <img class="services__box-img" src="images/services/box3.png" alt="box-img">
+                                <h5 class="services__box-title">General Builder</h5>
+                                <div class="services__box-text">
+                                    <p>The art electrical installations that provide all the necessary electrical
+                                        solutions to suit your business, home or industrial premises.</p>
+                                </div>
+                                <a class="services__box-btn" href="#">View More</a>
+                            </div>
+                            <div class="services__box">
+                                <img class="services__box-img" src="images/services/box4.png" alt="box-img">
+                                <h5 class="services__box-title">Security System</h5>
+                                <div class="services__box-text">
+                                    <p>We provide impeccable safety assessments to both commercial, residential
+                                        properties. Our adept & knowledgeable electricians.</p>
+                                </div>
+                                <a class="services__box-btn" href="#">View More</a>
+                            </div>
+                            <div class="services__box">
+                                <img class="services__box-img" src="images/services/box5.png" alt="box-img">
+                                <h5 class="services__box-title">Service & maintenance</h5>
+                                <div class="services__box-text">
+                                    <p>Utilized for measuring flow, temperature level & pressure in the manufacturing
+                                        industry array of technology is ensure productivity.</p>
+                                </div>
+                                <a class="services__box-btn" href="#">View More</a>
+                            </div>
+                            <div class="services__box">
+                                <img class="services__box-img" src="images/services/box6.png" alt="box-img">
+                                <h5 class="services__box-title">House Extensions</h5>
+                                <div class="services__box-text">
+                                    <p>Traditionally, electricity is supplied through overhead network poles, where the
+                                        cable is connected to your building.</p>
+                                </div>
+                                <a class="services__box-btn" href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="benefits">
+                <div class="container-fluid">
+                    <div class="befits-inner">
+                        <div class="befits-inner__stats">
+                            <div class="befits-inner__stats-box">
+                                <ul class="befits-inner__stats-list">
+                                    <li class="befits-inner__stats-item">
+                                        <div class="befits-inner__stats-itemleft">3956</div>
+                                        <div class="befits-inner__stats-itemright">Project Done</div>
+                                    </li>
+                                    <li class="befits-inner__stats-item">
+                                        <div class="befits-inner__stats-itemleft">854</div>
+                                        <div class="befits-inner__stats-itemright">People Working</div>
+                                    </li>
+                                    <li class="befits-inner__stats-item">
+                                        <div class="befits-inner__stats-itemleft">265</div>
+                                        <div class="befits-inner__stats-itemright">Business Partners</div>
+                                    </li>
+                                    <li class="befits-inner__stats-item">
+                                        <div class="befits-inner__stats-itemleft">845+</div>
+                                        <div class="befits-inner__stats-itemright">Happy Customers</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="befits-inner__content">
+                            <div class="befits-inner__content-decor decor-info">
+                                <img src="images/benefits/benefits-decor.svg" alt="decor">
+                                <span>Why Choose Us</span>
+                            </div>
+                            <h2 class="befits-inner__content-title">Few Reasons Why You Should Choose Us</h2>
+                            <div class="befits-inner__content-text">
+                                <p>We are offering the following information's about us that what we actually do in the
+                                    electrical sector. To Improve our customers’ lives by providing creative and
+                                    cost-effective solutions to their needs.</p>
+                            </div>
+                            <ul class="befits-inner__content-list">
+                                <li class="befits-inner__content-item">
+                                    <div class="befits-inner__content-benefit">35 Years Experience</div>
+                                    <p class="befits-inner__content-descr">Effective communication is the key to success
+                                        for any business. From our office staff, to our field.</p>
+                                </li>
+                                <li class="befits-inner__content-item">
+                                    <div class="befits-inner__content-benefit">Excellence Certificate</div>
+                                    <p class="befits-inner__content-descr">We understand fully that your time is of
+                                        extreme value. We are committed to meeting deadlines.</p>
+                                </li>
+                                <li class="befits-inner__content-item">
+                                    <div class="befits-inner__content-benefit">Affordable Price</div>
+                                    <p class="befits-inner__content-descr">We adhere strictly to the current National
+                                        Electrical Code, and we conduct regular in-house sessions.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="container-fluid">
+                    <div class="gallery__inner">
+                        <div class="gallery__decor decor-info">
+                            <img src="images/decor-info.svg" alt="decor">
+                            <span>The Gallery</span>
+                        </div>
+                        <h2 class="gallery__title">Our Recent Projects</h2>
+                        <div class="gallery__boxes">
+                            <a href="images/gallery/gallery-img1.jpg" class="gallery__box">
+                                <div class="gallery__box-img">
+                                    <img src="images/gallery/gallery-img1.jpg" alt="gallery">
+                                </div>
+                                <h5 class="gallery__box-title">Fiber cable change</h5>
+                                <h6 class="gallery__box-subtitle">Commercial</h6>
+                            </a>
+                            <a href="images/gallery/gallery-img2.jpg" class="gallery__box">
+                                <div class="gallery__box-img">
+                                    <img src="images/gallery/gallery-img2.jpg" alt="gallery">
+                                </div>
+                                <h5 class="gallery__box-title">Industry machine issue</h5>
+                                <h6 class="gallery__box-subtitle">Industry</h6>
+                            </a>
+                            <a href="images/gallery/gallery-img3.jpg" class="gallery__box">
+                                <div class="gallery__box-img">
+                                    <img src="images/gallery/gallery-img3.jpg" alt="gallery">
+                                </div>
+                                <h5 class="gallery__box-title">Wheel Alloy Change</h5>
+                                <h6 class="gallery__box-subtitle">Residential</h6>
+                            </a>
+                            <a href="images/gallery/gallery-img4.jpg" class="gallery__box">
+                                <div class="gallery__box-img">
+                                    <img src="images/gallery/gallery-img4.jpg" alt="gallery">
+                                </div>
+                                <h5 class="gallery__box-title">Roof Cleaning</h5>
+                                <h6 class="gallery__box-subtitle">Commercial</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="association">
+                <div class="container">
+                    <div class="association-inner">
+                        <div class="association-content">
+                            <div class="association-content__testimonials">
+                                <div class="association-content__testimonials-decor decor-info">
+                                    <img src="images/decor-info.svg" alt="decor">
+                                    <span>Testimonial</span>
+                                </div>
+                                <h3 class="association-content__testimonials-title">Customers Says</h3>
+                                <!-- Slider main container -->
+                                <div class="association-content__testimonials-slider swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="association-content__testimonials-wrapper swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div
+                                            class="association-content__testimonials-slide testimonials-slide swiper-slide">
+                                            <div class="testimonials-slide__user">
+                                                <div class="testimonials-slide__user-img">
+                                                    <img src="images/association/association-img.png" alt="slider-img">
+                                                </div>
+                                                <div class="testimonials-slide__user-info">
+                                                    <div class="testimonials-slide__user-name">Nancy luther</div>
+                                                    <div class="testimonials-slide__user-city">NewYork</div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonials-slide__review">
+                                                <p>We have had several good experiences with <span>Blue Collar</span>
+                                                    team. Most
+                                                    recently, they replaced our 20-year-old HVAC system with a new,
+                                                    <span>modern, and more efficient</span> system & it worked fine.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="association-content__testimonials-slide testimonials-slide swiper-slide">
+                                            <div class="testimonials-slide__user">
+                                                <div class="testimonials-slide__user-img">
+                                                    <img src="images/association/association-img.png" alt="slider-img">
+                                                </div>
+                                                <div class="testimonials-slide__user-info">
+                                                    <div class="testimonials-slide__user-name">Nancy luther</div>
+                                                    <div class="testimonials-slide__user-city">NewYork</div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonials-slide__review">
+                                                <p>We have had several good experiences with <span>Blue Collar</span>
+                                                    team. Most
+                                                    recently, they replaced our 20-year-old HVAC system with a new,
+                                                    <span>modern, and more efficient</span> system & it worked fine.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="association-content__testimonials-slide testimonials-slide swiper-slide">
+                                            <div class="testimonials-slide__user">
+                                                <div class="testimonials-slide__user-img">
+                                                    <img src="images/association/association-img.png" alt="slider-img">
+                                                </div>
+                                                <div class="testimonials-slide__user-info">
+                                                    <div class="testimonials-slide__user-name">Nancy luther</div>
+                                                    <div class="testimonials-slide__user-city">NewYork</div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonials-slide__review">
+                                                <p>We have had several good experiences with <span>Blue Collar</span>
+                                                    team. Most
+                                                    recently, they replaced our 20-year-old HVAC system with a new,
+                                                    <span>modern, and more efficient</span> system & it worked fine.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="association-content__testimonials-prev swiper-button-prev">
+                                        <img src="images/association/prev-arrow.svg" alt="prev-arrow">
+                                    </div>
+                                    <div class="association-content__testimonials-next swiper-button-next">
+                                        <img src="images/association/nex-arrow.svg" alt="next-arrow">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="association-anyquestions">
+                                <div class="association-anyquestions__decor decor-info">
+                                    <img src="images/decor-info.svg" alt="decor">
+                                    <span>Any Question</span>
+                                </div>
+                                <h6 class="association-anyquestions__title">99.9% Customer Satisfaction Based</h6>
+                                <div class="association-anyquestions__text">
+                                    <p>If you have any questions or need help contact with our team, or call</p>
+                                </div>
+                                <a class="association-anyquestions__tel" href="tel:003123 567890">(003) 123 456 7890</a>
+                            </div>
+                        </div>
+                        <div class="association-meetus">
+                            <div class="association-meetus__decor decor-info">
+                                <img src="images/decor-info.svg" alt="decor">
+                                <span>Meet Us</span>
+                            </div>
+                            <h3 class="association-meetus__title">Appointment Form</h3>
+                            <form class="association-meetus__form">
+                                <input type="text" class="association-meetus__form-input" placeholder="Your name">
+                                <input type="email" class="association-meetus__form-input" placeholder="Your email">
+                                <input type="tel" class="association-meetus__form-input" placeholder="Phone Number">
+                                <input type="date" class="association-meetus__form-input" placeholder="Date">
+                                <textarea class="association-meetus__form-textarea"
+                                    placeholder="Service Description"></textarea>
+                                <button class="association-meetus__form-btn" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clients">
+                <div class="container">
+                    <div class="clients__inner">
+                        <div class="clients__inner-decor decor-info">
+                            <img src="images/decor-info.svg" alt="decor">
+                            <span>Clients</span>
+                        </div>
+                        <h2 class="clients__inner-title">Our Trusted Big Clients!</h2>
+                        <div class="clients__inner-boxes">
+                            <img class="clients__inner-box" src="images/clients/client1.svg" alt="client">
+                            <img class="clients__inner-box" src="images/clients/client2.svg" alt="client">
+                            <img class="clients__inner-box" src="images/clients/client3.svg" alt="client">
+                            <img class="clients__inner-box" src="images/clients/client4.svg" alt="client">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="price">
+                <div class="container">
+                    <div class="price-top">
+                        <div class="price-top__content">
+                            <div class="price-top__content-decor decor-info">
+                                <img src="images/decor-info.svg" alt="decor">
+                                <span>Price Plan</span>
+                            </div>
+                            <h2 class="price-top__content-title">Let’s Customize Work With Affordable Price</h2>
+                        </div>
+                        <div class="price-top__text">
+                            <p>This is passionate about delivering growth and the new possibilities in the field of
+                                electrical services. We have extensive experience of domestic and business electrical
+                                installations and no job is too small.</p>
+                        </div>
+                    </div>
+                    <div class="price-cards">
+                        <div class="price-card">
+                            <div class="price-card__plan">
+                                <div class="price-cards__plan-content">
+                                    <div class="price-cards__plan-name">Basic Plan</div>
+                                    <div class="price-cards__plan-cost">$ 599.00</div>
+                                </div>
+                                <div class="price-cards__plan-text">
+                                    <p>Per Visit Charge</p>
+                                </div>
+                            </div>
+                            <ul class="price-cards__list">
+                                <li class="price-cards-item">Electrical Service</li>
+                                <li class="price-cards-item">Distribution Power Systemss</li>
+                                <li class="price-cards-item">High & Medium Voltages</li>
+                                <li class="price-cards-item">Industrial Control Systems</li>
+                                <li class="price-cards-item">Switch Installation</li>
+                                <li class="price-cards-item">Generator Installations</li>
+                                <li class="price-cards-item">Innovative Construction</li>
+                            </ul>
+                            <a class="price-cards__btn" href="#">Buy Now</a>
+                        </div>
+                        <div class="price-card price-card--popular">
+                            <div class="price-card__plan">
+                                <div class="price-cards__plan-content">
+                                    <div class="price-cards__plan-name">Standard</div>
+                                    <div class="price-cards__plan-cost">$ 699.00</div>
+                                </div>
+                                <div class="price-cards__plan-text">
+                                    <p>Per Visit Charge</p>
+                                </div>
+                            </div>
+                            <ul class="price-cards__list">
+                                <li class="price-cards-item">PLC Controls</li>
+                                <li class="price-cards-item">Conveyor systems</li>
+                                <li class="price-cards-item">Wiring renovations</li>
+                                <li class="price-cards-item">Electric Water Heater Repair</li>
+                                <li class="price-cards-item">Service And Panel Upgrades</li>
+                                <li class="price-cards-item">Efficient Lighting Solutions</li>
+                                <li class="price-cards-item">Site lighting</li>
+                            </ul>
+                            <a class="price-cards__btn" href="#">Buy Now</a>
+                        </div>
+                        <div class="price-card">
+                            <div class="price-card__plan">
+                                <div class="price-cards__plan-content">
+                                    <div class="price-cards__plan-name">Professional</div>
+                                    <div class="price-cards__plan-cost">$ 799.00</div>
+                                </div>
+                                <div class="price-cards__plan-text">
+                                    <p>Per Visit Charge</p>
+                                </div>
+                            </div>
+                            <ul class="price-cards__list">
+                                <li class="price-cards-item">Cable Tray Installations</li>
+                                <li class="price-cards-item">Wiring Upgrades</li>
+                                <li class="price-cards-item">Energy Efficient Lighting</li>
+                                <li class="price-cards-item">Emergency Generating</li>
+                                <li class="price-cards-item">Pools And Hot Tubs</li>
+                                <li class="price-cards-item">Air Conditioning Units</li>
+                                <li class="price-cards-item">Generating Systems</li>
+                            </ul>
+                            <a class="price-cards__btn" href="#">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="price-benefits">
+                        <div class="price-benefit">
+                            <h6 class="price-benefit__title">Affordable Price</h6>
+                            <div class="price-benefit__text">We adhere strictly to the current National Electrical Code,
+                                and we conduct regular in-house sessions with our technicians to review any code changes
+                                and applications.</div>
+                        </div>
+                        <div class="price-benefit">
+                            <h6 class="price-benefit__title">Fixed Plan</h6>
+                            <div class="price-benefit__text">We understand fully that your time is of extreme value. You
+                                will never have to worry about waiting around for our trained technicians.24/7 Service
+                                Providers Affordable Price.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="news__inner">
+                        <div class="news__inner-decor decor-info">
+                            <img src="images/decor-info.svg" alt="decor">
+                            <span>Stay Updated</span>
+                        </div>
+                        <h2 class="news-title">Latest News & Articles</h2>
+                        <div class="news__inner-news">
+                            <div class="news__inner-newsbox">
+                                <div class="news__inner-img">
+                                    <img src="images/news/news-img1.jpg" alt="news">
+                                </div>
+                                <div class="news__inner-content">
+                                    <div class="news__inner-info">
+                                        <div class="news__inner-author">Alex Louis</div>
+                                        <div class="news__inner-data">April 16, 2022</div>
+                                    </div>
+                                    <h4 class="news__inner-title">How Outside Lighting can Transform Your Summer Garden
+                                    </h4>
+                                    <div class="news__inner-text">
+                                        <p>Capitalize on low-hanging fruit to identify a ballpark value added matrix
+                                            economically activity to beta test override the multiple touchpoints for
+                                            offshoring the digital divide with DevOps.</p>
+                                    </div>
+                                    <a class="news__inner-btn" href="#"><span>View More</span>
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 12L7 6.5L1 1" stroke="#1C2752" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="news__inner-newsbox">
+                                <div class="news__inner-img">
+                                    <img src="images/news/news-img2.jpg" alt="news">
+                                </div>
+                                <div class="news__inner-content">
+                                    <div class="news__inner-info">
+                                        <div class="news__inner-author">John Christin</div>
+                                        <div class="news__inner-data">April 16, 2022</div>
+                                    </div>
+                                    <h4 class="news__inner-title">Easy Energy Saving Solutions for Industrial Businesses
+                                    </h4>
+                                    <div class="news__inner-text">
+                                        <p>Strategies on low-hanging fruit to identify a ballpark value added activity
+                                            matrix economically to beta test override multiple touchpoints for
+                                            offshoring the digital divide with DevOps.</p>
+                                    </div>
+                                    <a class="news__inner-btn" href="#"><span>View More</span>
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 12L7 6.5L1 1" stroke="#1C2752" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <div class="subscribe__inner-content">
+                            <h2 class="subscribe__inner-title">Subscribe Our Newsletter</h2>
+                            <div class="subscribe__inner-text">
+                                <p>Stay in touch with us to get latest news. We are here to fit the needs of your
+                                    electrical services for your dream building.</p>
+                            </div>
+                        </div>
+                        <div class="subscribe__inner-form">
+                            <form class="subscribe__inner-forminner">
+                                <input type="email" class="subscribe__inner-input"
+                                    placeholder="Enter your email address">
+                                <button class="subscribe__inner-btn" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__top">
+                    <a class="logo" href="#">
+                        <img src="images/footer-logo.svg" alt="footer-logo">
+                    </a>
+                    <a class="email-btn footer-emailbtn" href="mailto:Info@bluecollar.com">
+                        <p class="footer-emailbtn__text">Mail Us</p>
+                        <p class="footer-emailbtn__email">Info@bluecollar.com</p>
+                    </a>
+                    <a class="tel-btn footer-telbtn" href="tel:+01569896654">
+                        <p class="footer-telbtn__text">Call Us</p>
+                        <p class="footer-telbtn__tel">+01 569 896 654</p>
+                    </a>
+                    <a class="email-btn footer-locationbtn" href="#">
+                        <p class="footer-locationbtn__text">Location</p>
+                        <p class="footer-locationbtn__tel">Amsterdam, 109-74</p>
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-content__social">
+                        <div class="footer-content__social-text">
+                            <p>We are here to fit the needs of your basic services for your dream building whether its a
+                                commercial, residential or industry.</p>
+                        </div>
+                        <div class="footer-content__social-links">
+                            <a class="footer-content__social-link" href="#">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30Z"
+                                        fill="#2C3765" />
+                                    <path
+                                        d="M33.6585 22.5473C34.7231 22.5503 35.7431 22.9589 36.4958 23.6838C37.2486 24.4086 37.6729 25.3909 37.6761 26.416V34.1527C37.6729 35.1778 37.2486 36.16 36.4958 36.8849C35.7431 37.6098 34.7231 38.0183 33.6585 38.0214H25.6243C24.5598 38.0183 23.5397 37.6098 22.787 36.8849C22.0342 36.16 21.6099 35.1778 21.6068 34.1527V26.416C21.6099 25.3909 22.0342 24.4086 22.787 23.6838C23.5397 22.9589 24.5598 22.5503 25.6243 22.5473H33.6585ZM33.6585 21H25.6243C22.5309 21 20 23.4371 20 26.416V34.1527C20 37.1315 22.5309 39.5686 25.6243 39.5686H33.6585C36.752 39.5686 39.2828 37.1315 39.2828 34.1527V26.416C39.2828 23.4371 36.752 21 33.6585 21Z"
+                                        fill="white" />
+                                    <path
+                                        d="M34.8638 26.4168C34.6254 26.4168 34.3924 26.3487 34.1942 26.2212C33.996 26.0937 33.8416 25.9124 33.7504 25.7004C33.6591 25.4883 33.6353 25.255 33.6818 25.0298C33.7283 24.8047 33.8431 24.5979 34.0116 24.4356C34.1802 24.2733 34.3949 24.1628 34.6287 24.118C34.8625 24.0732 35.1048 24.0962 35.325 24.184C35.5452 24.2719 35.7334 24.4206 35.8659 24.6115C35.9983 24.8023 36.069 25.0267 36.069 25.2562C36.0693 25.4087 36.0384 25.5598 35.9779 25.7007C35.9175 25.8417 35.8287 25.9698 35.7167 26.0776C35.6048 26.1854 35.4718 26.2709 35.3254 26.3291C35.179 26.3873 35.0222 26.4171 34.8638 26.4168ZM29.6415 27.1902C30.2772 27.1902 30.8986 27.3717 31.4271 27.7118C31.9556 28.0519 32.3676 28.5352 32.6108 29.1007C32.8541 29.6663 32.9177 30.2885 32.7937 30.8889C32.6697 31.4893 32.3636 32.0407 31.9141 32.4736C31.4646 32.9064 30.892 33.2012 30.2685 33.3206C29.6451 33.44 28.9989 33.3787 28.4116 33.1445C27.8243 32.9102 27.3224 32.5135 26.9692 32.0046C26.6161 31.4956 26.4276 30.8972 26.4276 30.2851C26.4285 29.4646 26.7674 28.6779 27.3699 28.0976C27.9725 27.5174 28.7894 27.1911 29.6415 27.1902ZM29.6415 25.6429C28.6881 25.6429 27.756 25.9152 26.9633 26.4253C26.1705 26.9354 25.5526 27.6604 25.1878 28.5086C24.8229 29.3569 24.7274 30.2903 24.9134 31.1908C25.0994 32.0913 25.5586 32.9184 26.2328 33.5676C26.9069 34.2168 27.7659 34.659 28.701 34.8381C29.6362 35.0172 30.6054 34.9253 31.4863 34.5739C32.3672 34.2226 33.1201 33.6276 33.6498 32.8642C34.1795 32.1008 34.4622 31.2033 34.4622 30.2851C34.4622 29.0539 33.9543 27.8732 33.0503 27.0026C32.1462 26.132 30.92 25.6429 29.6415 25.6429Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a class="footer-content__social-link" href="#">
+
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30Z"
+                                        fill="#2C3765" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M39.2828 30.2843C39.2828 25.1572 34.9657 21 29.6414 21C24.3171 21 20 25.1572 20 30.2843C20 34.9182 23.5251 38.7592 28.1349 39.4563V32.9689H25.6863V30.2843H28.1349V28.2389C28.1349 25.9124 29.5747 24.6263 31.7767 24.6263C32.8317 24.6263 33.9353 24.8078 33.9353 24.8078V27.0928H32.7189C31.5219 27.0928 31.1475 27.8082 31.1475 28.5435V30.2843H33.8212L33.3942 32.9689H31.1479V39.4572C35.7577 38.7604 39.2828 34.9194 39.2828 30.2843Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                            <a class="footer-content__social-link" href="#">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 30C0 13.4315 13.4315 0 30 0V0C46.5685 0 60 13.4315 60 30V30C60 46.5685 46.5685 60 30 60V60C13.4315 60 0 46.5685 0 30V30Z"
+                                        fill="#2C3765" />
+                                    <g clip-path="url(#clip0_1_1029)">
+                                        <path
+                                            d="M40.6602 23.9584C39.8852 24.2952 39.0652 24.517 38.2261 24.617C39.1079 24.1006 39.7711 23.2803 40.0912 22.3099C39.2575 22.7974 38.3469 23.1395 37.3984 23.3214C36.9991 22.9028 36.5187 22.5698 35.9866 22.3427C35.4546 22.1155 34.8818 21.9989 34.3033 22C31.9609 22 30.0654 23.868 30.0654 26.1708C30.0637 26.4911 30.1004 26.8104 30.1747 27.122C28.4951 27.0433 26.8504 26.6148 25.3458 25.864C23.8413 25.1132 22.51 24.0566 21.4372 22.7619C21.0608 23.3963 20.8618 24.1203 20.8608 24.858C20.8608 26.3042 21.6154 27.5826 22.7547 28.3315C22.0797 28.3155 21.4185 28.1368 20.8273 27.8107V27.8623C20.8273 29.8853 22.2907 31.5682 24.2276 31.9513C23.8634 32.0484 23.488 32.0976 23.1111 32.0977C22.8436 32.0981 22.5767 32.0722 22.3144 32.0202C22.8528 33.6773 24.42 34.8825 26.2764 34.9169C24.7679 36.0794 22.9159 36.7078 21.0115 36.7032C20.6734 36.7027 20.3357 36.6825 20 36.6429C21.9374 37.88 24.1895 38.5344 26.4882 38.5281C34.2943 38.5281 38.5589 32.1708 38.5589 26.6571C38.5589 26.4764 38.5541 26.2956 38.5455 26.1191C39.3733 25.5303 40.0893 24.7987 40.6602 23.9584Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_1029">
+                                            <rect width="21" height="17" fill="white" transform="translate(20 22)" />
+                                        </clipPath>
+                                    </defs> 
+                                </svg>
+
+
+
+
+                            </a>
+                            <a class="footer-content__social-link" href="#">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 46.5685 46.5685 60 30 60C13.4315 60 0 46.5685 0 30Z"
+                                        fill="#2C3765" />
+                                    <path
+                                        d="M29.7966 20C24.3866 20 20 24.3847 20 29.7923C20 33.801 22.4142 37.2458 25.8649 38.7627C25.8386 38.0807 25.8605 37.2589 26.0354 36.5157C26.2235 35.7201 27.295 31.178 27.295 31.178C27.295 31.178 26.9801 30.5529 26.9801 29.6305C26.9801 28.1792 27.8198 27.095 28.8695 27.095C29.7617 27.095 30.1903 27.7639 30.1903 28.5639C30.1903 29.46 29.6173 30.7977 29.3243 32.0392C29.0794 33.0797 29.8448 33.9234 30.8725 33.9234C32.7269 33.9234 33.9777 31.5409 33.9777 28.7169C33.9777 26.5704 32.5301 24.9661 29.9016 24.9661C26.932 24.9661 25.0776 27.1824 25.0776 29.6567C25.0776 30.5092 25.3313 31.1125 25.7249 31.5759C25.9042 31.7901 25.9305 31.8775 25.8649 32.1223C25.8168 32.3015 25.7118 32.7343 25.6637 32.9092C25.5981 33.1584 25.3969 33.2458 25.1739 33.154C23.8049 32.5944 23.1664 31.0994 23.1664 29.4119C23.1664 26.6316 25.515 23.2961 30.1684 23.2961C33.9077 23.2961 36.37 26.0021 36.37 28.9048C36.37 32.7474 34.2314 35.6152 31.0824 35.6152C30.0241 35.6152 29.0313 35.0425 28.6901 34.3955C28.6901 34.3955 28.1216 36.6512 27.9991 37.0884C27.7936 37.8447 27.3868 38.5966 27.0151 39.1867C27.9169 39.4526 28.8521 39.5881 29.7923 39.5889C35.2023 39.5889 39.5889 35.2042 39.5889 29.7966C39.5889 24.389 35.2067 20 29.7966 20Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="footer-content__explore">
+                        <h6 class="footer-content__explore-title">Explore</h6>
+                        <ul class="footer-content__explore-list">
+                            <li class="footer-content__explore-item"><a href="#">About Us</a></li>
+                            <li class="footer-content__explore-item"><a href="#">Pricing</a></li>
+                            <li class="footer-content__explore-item"><a href="#">Team</a></li>
+                            <li class="footer-content__explore-item"><a href="#">Blog</a></li>
+                            <li class="footer-content__explore-item"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content__links">
+                        <h6 class="footer-content__links-title">Quick Links</h6>
+                        <ul class="footer-content__links-list">
+                            <li class="footer-content__links-item"><a href="#">Home</a></li>
+                            <li class="footer-content__links-item"><a href="#">Services</a></li>
+                            <li class="footer-content__links-item"><a href="#">Service Single</a></li>
+                            <li class="footer-content__links-item"><a href="#">Projects</a></li>
+                            <li class="footer-content__links-item"><a href="#">Projects Single</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content__pages">
+                        <h6 class="footer-content__pages-title">Utility Pages</h6>
+                        <ul class="footer-content__pages-list">
+                            <li class="footer-content__pages-item"><a href="#">Style Guide</a></li>
+                            <li class="footer-content__pages-item"><a href="#">Changelog</a></li>
+                            <li class="footer-content__pages-item"><a href="#">Licenses</a></li>
+                            <li class="footer-content__pages-item"><a href="#">Protected Page</a></li>
+                            <li class="footer-content__pages-item"><a href="#">404 Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
